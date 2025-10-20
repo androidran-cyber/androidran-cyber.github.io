@@ -1,0 +1,11 @@
+{
+  "stages": {
+    "S1": {
+      "pool": [
+        "ONDO",
+        "TIA"
+      ]
+    }
+  },
+  "fake_start": 0
+}
