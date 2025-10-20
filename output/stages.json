@@ -1,0 +1,28 @@
+{
+  "cadence": "t+3",
+  "stages": {
+    "S1": {
+      "pool": []
+    },
+    "S2": {
+      "pool": [
+        "Karak",
+        "OLAS",
+        "ZKM"
+      ]
+    },
+    "S3": {
+      "pool": [
+        "Ondo"
+      ]
+    },
+    "S4": {
+      "pool": []
+    },
+    "S5": {
+      "pool": []
+    }
+  },
+  "fake_start": 0,
+  "watchlist": []
+}
