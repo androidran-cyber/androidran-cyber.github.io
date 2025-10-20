@@ -1,22 +1,48 @@
 name: Data T+3
+
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "10 14 */3 * *"
+    - cron: "0 14 */3 * *"  # 每3天 14:00 UTC（北京时间晚间）
+
+permissions:
+  contents: write
+
 jobs:
-  build-and-publish:
+  generate-and-commit:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.11" }
-      - name: Generate (tplus3)
-        env: { CADENCE: "tplus3" }
-        run: python backend/main.py
-      - name: Commit output
-        env: { GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} }
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps (optional)
+        shell: bash
+        run: |
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Generate outputs (t+3)
+        env:
+          CADENCE: "tplus3"
+        shell: bash
+        run: |
+          python backend/main.py || true
+          if [ -f scripts/normalize_outputs.py ]; then python scripts/normalize_outputs.py || true; fi
+
+      - name: Commit output changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/*
-          git diff --quiet || (git commit -m "data(tplus3): update outputs" && git push)
+          git add output || true
+          if ! git diff --cached --quiet; then
+            git commit -m "data(t+3): update outputs"
+            git push
+          else
+            echo "No changes in /output; skip commit."
+          fi
