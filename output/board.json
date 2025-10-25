@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.x",
-  "cadence": "t+3",
-  "updated_at": "2025-10-25 14:31 UTC",
+  "cadence": "daily",
+  "updated_at": "2025-10-25 14:32 UTC",
   "items": [
     {
       "project": "Karak",
@@ -9,21 +9,21 @@
       "structure": "再质押（Restaking 协议）",
       "stage": "S1",
       "score_total": 0.0,
-      "confidence": 77.7,
+      "confidence": 88.5,
       "current_price": null,
       "agents": {
-        "A1_vol_mcap": 52,
-        "A2_tvl": 87,
-        "A3_sns": 48,
-        "A4_depth": 75,
-        "B1_leverage": 72,
-        "B2_whale": 75,
-        "B3_dev": 53,
-        "B4_ecosys": 60
+        "A1_vol_mcap": 55,
+        "A2_tvl": 91,
+        "A3_sns": 87,
+        "A4_depth": 86,
+        "B1_leverage": 51,
+        "B2_whale": 54,
+        "B3_dev": 48,
+        "B4_ecosys": 88
       },
       "metrics": {
-        "TVL_3d": 2.5,
-        "VolMcap_1d": 4.5
+        "TVL_3d": 1.1,
+        "VolMcap_1d": 5.4
       },
       "actions": "观察与分批建仓",
       "name": "Karak",
@@ -35,21 +35,21 @@
       "structure": "社交基础设施（Social Infra）",
       "stage": "S1",
       "score_total": 0.0,
-      "confidence": 87.8,
+      "confidence": 55.4,
       "current_price": null,
       "agents": {
-        "A1_vol_mcap": 68,
-        "A2_tvl": 52,
-        "A3_sns": 92,
-        "A4_depth": 60,
-        "B1_leverage": 57,
-        "B2_whale": 66,
-        "B3_dev": 68,
-        "B4_ecosys": 84
+        "A1_vol_mcap": 86,
+        "A2_tvl": 55,
+        "A3_sns": 81,
+        "A4_depth": 71,
+        "B1_leverage": 90,
+        "B2_whale": 71,
+        "B3_dev": 78,
+        "B4_ecosys": 77
       },
       "metrics": {
-        "TVL_3d": 0.7,
-        "VolMcap_1d": 5.7
+        "TVL_3d": 2.1,
+        "VolMcap_1d": 2.0
       },
       "actions": "观察与分批建仓",
       "name": "OLAS",
@@ -61,21 +61,21 @@
       "structure": "零知识基础设施（ZK Infra）",
       "stage": "S2",
       "score_total": 0.0,
-      "confidence": 58.6,
+      "confidence": 74.1,
       "current_price": null,
       "agents": {
-        "A1_vol_mcap": 57,
-        "A2_tvl": 71,
-        "A3_sns": 92,
-        "A4_depth": 65,
-        "B1_leverage": 91,
-        "B2_whale": 82,
-        "B3_dev": 64,
-        "B4_ecosys": 72
+        "A1_vol_mcap": 77,
+        "A2_tvl": 85,
+        "A3_sns": 82,
+        "A4_depth": 63,
+        "B1_leverage": 88,
+        "B2_whale": 86,
+        "B3_dev": 75,
+        "B4_ecosys": 50
       },
       "metrics": {
-        "TVL_3d": -0.5,
-        "VolMcap_1d": 5.5
+        "TVL_3d": 1.7,
+        "VolMcap_1d": 8.2
       },
       "actions": "严格风控",
       "name": "ZKM",
@@ -87,21 +87,21 @@
       "structure": "RWA 资产通道",
       "stage": "S2",
       "score_total": 0.0,
-      "confidence": 68.7,
+      "confidence": 73.6,
       "current_price": null,
       "agents": {
-        "A1_vol_mcap": 88,
-        "A2_tvl": 70,
-        "A3_sns": 52,
-        "A4_depth": 86,
-        "B1_leverage": 70,
-        "B2_whale": 84,
-        "B3_dev": 61,
-        "B4_ecosys": 57
+        "A1_vol_mcap": 66,
+        "A2_tvl": 73,
+        "A3_sns": 94,
+        "A4_depth": 43,
+        "B1_leverage": 71,
+        "B2_whale": 82,
+        "B3_dev": 59,
+        "B4_ecosys": 84
       },
       "metrics": {
-        "TVL_3d": 1.9,
-        "VolMcap_1d": 9.1
+        "TVL_3d": -0.5,
+        "VolMcap_1d": 3.3
       },
       "actions": "严格风控",
       "name": "Ondo",
@@ -110,6 +110,6 @@
   ],
   "market_regime": {
     "s5_regime": "neutral",
-    "score": 0.49
+    "score": 0.56
   }
 }
