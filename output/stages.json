@@ -1,5 +1,5 @@
 {
-  "cadence": "t+3",
+  "cadence": "weekly",
   "stages": {
     "S1": {
       "pool": []
@@ -7,12 +7,12 @@
     "S2": {
       "pool": [
         "Karak",
-        "OLAS",
-        "ZKM"
+        "OLAS"
       ]
     },
     "S3": {
       "pool": [
+        "ZKM",
         "Ondo"
       ]
     },
