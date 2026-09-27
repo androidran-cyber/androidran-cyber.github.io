@@ -1,51 +1,51 @@
 {
-  "cadence": "daily",
+  "cadence": "weekly",
   "layers": [
     {
       "layer": "L1_supply",
-      "quality": 0.77,
+      "quality": 0.8,
       "probes": [
         {
           "k": "lp_lock_ratio",
-          "v": 57.0
+          "v": 92.5
         },
         {
           "k": "holder_gini",
-          "v": 61.3
+          "v": 73.7
         }
       ]
     },
     {
       "layer": "L2_demand",
-      "quality": 0.74,
+      "quality": 0.72,
       "probes": [
         {
           "k": "tg_growth_7d",
-          "v": -1.1
+          "v": 4.5
         },
         {
           "k": "x_engagement",
-          "v": 1.9
+          "v": -1.4
         }
       ]
     },
     {
       "layer": "L3_liquidity",
-      "quality": 0.85,
+      "quality": 0.58,
       "probes": [
         {
           "k": "depth_usd",
-          "v": 208663
+          "v": 139057
         }
       ]
     },
     {
       "layer": "L4_devops",
-      "quality": 0.72,
+      "quality": 0.71,
       "probes": [
         {
           "k": "commit_7d",
-          "v": 27
+          "v": 13
         }
       ]
     },
@@ -55,7 +55,7 @@
       "probes": [
         {
           "k": "news_pulse",
-          "v": 1.7
+          "v": 4.8
         }
       ]
     },
@@ -65,7 +65,7 @@
       "probes": [
         {
           "k": "contract_risk",
-          "v": "中"
+          "v": "高"
         }
       ]
     }
